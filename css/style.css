@@ -1,0 +1,455 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+  overflow-x: hidden;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+section {
+  width: 100vw;
+}
+
+header {
+  position: absolute;
+  width: 100%;
+  padding: 20px 35px;
+  z-index: 1;
+}
+header .logo {
+  font-family: "playfair";
+  font-size: 36px;
+}
+header nav ul {
+  display: flex;
+  position: absolute;
+  right: 50px;
+  gap: 110px;
+  top: 20px;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: #000;
+  font-size: 26px;
+  font-family: "boldopensans";
+}
+header nav ul li a img {
+  margin-left: 50px;
+}
+header nav ul li a:hover {
+  color: #dc1111;
+}
+
+#hero {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+}
+#hero .heading-text {
+  position: absolute;
+  top: 30%;
+  z-index: 1;
+  left: 40px;
+}
+#hero .heading-text h1 {
+  font-family: "gallery";
+  font-size: 140px;
+}
+#hero .heading-text h1 span {
+  color: #dc1111;
+}
+#hero .heading-text h2 {
+  font-family: "lightever";
+  font-size: 90px;
+}
+#hero .heading-text h3 {
+  font-family: "gallery";
+  font-size: 110px;
+}
+#hero .image {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+#hero .image img {
+  width: 100%;
+}
+#hero button {
+  position: absolute;
+  right: 80px;
+  bottom: -110px;
+  border: none;
+  padding: 12px 35px;
+  font-family: "boldopensans";
+  font-size: 24px;
+  transition: 0.3s ease-in-out;
+  background: none;
+}
+#hero button img {
+  padding-left: 50px;
+}
+#hero button:hover {
+  background: #fff;
+}
+
+#about {
+  margin-top: 300px;
+}
+#about .heading h1 {
+  font-family: "gallery";
+  font-size: 60px;
+  line-height: 70.58px;
+  border-bottom: 2px solid #c2c2c2;
+}
+#about .image {
+  margin-top: 48px;
+}
+#about .about-text {
+  margin-top: 48px;
+}
+#about .about-text p {
+  font-size: 22px;
+  font-family: "lightever";
+  line-height: 28.8px;
+}
+#about .btn button {
+  border: none;
+  font-size: 26px;
+  background: #fff;
+  font-family: "boldopensans";
+  margin-top: 50px;
+}
+#about .btn button:hover {
+  background-color: #000;
+  color: #fff;
+}
+#about .btn img {
+  margin-left: 26px;
+}
+
+#my-work {
+  margin-top: 268px;
+}
+#my-work .heading h1 {
+  font-family: "gallery";
+  font-size: 60px;
+  line-height: 70.58px;
+  border-bottom: 2px solid #c2c2c2;
+}
+#my-work .image {
+  width: 100%;
+  height: 100%;
+  margin-top: 48px;
+}
+#my-work .image img {
+  width: 375px;
+  height: 435px;
+}
+
+#blog {
+  margin-top: 268px;
+}
+#blog .heading h1 {
+  font-family: "gallery";
+  font-size: 60px;
+  line-height: 70.58px;
+  border-bottom: 2px solid #c2c2c2;
+}
+#blog .blog-text {
+  margin-top: 75px;
+  border-bottom: 2px solid #c2c2c2;
+  width: 600px;
+}
+#blog .blog-text p {
+  font-size: 25px;
+  font-family: "lightever";
+  line-height: 36.6px;
+}
+#blog .blog-text .date {
+  display: flex;
+  margin-bottom: 8px;
+}
+#blog .blog-text .date p {
+  font-size: 20px;
+  line-height: 27.6px;
+  padding-top: 26px;
+}
+#blog .blog-text .date button {
+  border: none;
+  background: #fff;
+  margin: 26px 0 0 400px;
+}
+
+#articles {
+  margin-top: 268px;
+  background: #f3f3f3;
+  height: 100vh;
+}
+#articles .heading {
+  width: 95%;
+}
+#articles .heading h1 {
+  font-family: "gallery";
+  font-size: 60px;
+  line-height: 70.58px;
+  border-bottom: 2px solid #c2c2c2;
+  margin-left: 67px;
+  padding-top: 97px;
+}
+#articles .articles-inner {
+  margin-top: 116px;
+  border-bottom: 2px solid #c2c2c2;
+  width: 380px;
+  padding-bottom: 10px;
+}
+#articles .articles-inner .links {
+  margin-top: 39px;
+  display: flex;
+}
+#articles .articles-inner .links p {
+  font-size: 20px;
+}
+#articles .articles-inner .links button {
+  border: none;
+  margin-left: 190px;
+}
+
+#hire-me {
+  margin-top: 268px;
+}
+#hire-me .heading {
+  width: 95%;
+  font-family: "lightever";
+}
+#hire-me .heading h1 {
+  font-family: "gallery";
+  font-size: 60px;
+  line-height: 70.58px;
+  border-bottom: 2px solid #c2c2c2;
+  margin-left: 67px;
+  padding-top: 97px;
+}
+#hire-me .heading .hire-inner {
+  margin-top: 99px;
+  padding-left: 50px;
+}
+#hire-me .heading .hire-inner p {
+  font-size: 60px;
+  line-height: 72px;
+}
+#hire-me .heading .hire-inner form {
+  padding-top: 164px;
+  display: flex;
+  font-size: 30px;
+}
+#hire-me .heading .hire-inner form #email {
+  width: 60%;
+  border: none;
+  border-bottom: 2px solid #000;
+  padding-bottom: 20px;
+}
+#hire-me .heading .hire-inner form #submit {
+  width: 40%;
+  border: none;
+  background: #fff;
+  border-bottom: 2px solid #000;
+  position: relative;
+  padding-bottom: 20px;
+}
+#hire-me .heading .hire-inner form img {
+  position: absolute;
+  right: 0;
+  padding: 10px 110px;
+}
+
+#name {
+  margin-top: 116px;
+}
+#name .image-container {
+  background-image: url(../images/Rectangle\ 55.png);
+  width: 100%;
+  height: 100vh;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+#name .image-container .text {
+  background-color: #fff;
+  margin: 0 auto;
+  width: 100%;
+  position: absolute;
+  mix-blend-mode: screen;
+  margin-top: 110px;
+  height: 65vh;
+}
+#name .image-container .text h1 {
+  font-size: 220px;
+  font-family: "gallery";
+  position: absolute;
+  top: 110px;
+  left: 25px;
+}
+
+footer {
+  margin-top: 100px;
+  background: #000;
+  color: #fff;
+  height: 50vh;
+}
+footer .footer-inner {
+  padding-top: 111px;
+  display: flex;
+  align-items: center;
+}
+footer .footer-inner .text {
+  padding-left: 48px;
+}
+footer .footer-inner .text h1 {
+  font-size: 60px;
+  font-family: "gallery";
+}
+footer .footer-inner .text p {
+  font-size: 30px;
+  font-family: "lightever";
+  color: #dc1111;
+}
+footer .links ul {
+  display: flex;
+  gap: 40px;
+  position: absolute;
+  right: 45px;
+  padding-top: 100px;
+}
+footer .links ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-family: "lightever";
+  font-size: 30px;
+}/*# sourceMappingURL=style.css.map */

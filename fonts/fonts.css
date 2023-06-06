@@ -1,0 +1,30 @@
+@font-face {
+    font-family: "gallery";
+    src: url(./gallerymodern-webfont.ttf);
+}
+
+@font-face {
+    font-family: "boldopensans";
+    src: url(./OpenSans-Bold.ttf);
+}
+
+@font-face {
+    font-family: "regularopensans";
+    src: url(./OpenSans_Condensed-Regular.ttf);
+}
+
+@font-face {
+    font-family: "ever";
+    src: url(./TWKEverett-Regular.otf);
+}
+
+@font-face {
+    font-family: "lightever";
+    src: url(./TWKEverett-Light.otf);
+}
+
+@font-face {
+    font-family: "playfair";
+    src: url(./PlayfairDisplay-Bold.ttf);
+}
+
